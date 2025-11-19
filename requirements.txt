@@ -1,0 +1,5 @@
+requests>=2.31.0
+tqdm>=4.66.0
+# GDAL is auto-detected from OSGEO4W installation (Z:\GEO\OSGeo4W)
+# If GDAL is not found, install OSGEO4W or use: pip install GDAL
+

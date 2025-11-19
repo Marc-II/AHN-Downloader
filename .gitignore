@@ -1,0 +1,6 @@
+downloads/*
+downloads_wgs84/*
+download_progress.json
+download_errors.log
+conversion_progress.json
+conversion_errors.log
