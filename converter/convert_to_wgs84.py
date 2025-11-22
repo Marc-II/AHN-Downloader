@@ -15,8 +15,10 @@ from typing import Dict, List, Tuple, Optional
 from tqdm import tqdm
 
 # Configuration
-DOWNLOAD_DIR = "downloads"
-OUTPUT_DIR = "downloads_wgs84"
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parent
+DOWNLOAD_DIR = str(PROJECT_ROOT / "downloads")
+OUTPUT_DIR = str(PROJECT_ROOT / "downloads_wgs84")
 TARGET_CRS = "EPSG:4326"
 RESAMPLING_METHOD = "bilinear"  # Good for elevation data
 CONVERSION_LOG = "conversion_progress.json"
